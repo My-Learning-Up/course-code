@@ -1,0 +1,15 @@
+name: Multiple-Job
+on: [push]
+
+jobs:
+  run-shell-commands:
+    runs-on: macos-latest
+    steps:
+      - name: view sw version
+        run: sw_vers
+  parallel-job-commands:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: My Step
+        run: echo "Running on Windows"
