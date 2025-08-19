@@ -5,11 +5,7 @@ jobs:
   multiple-log-level:
     runs-on: ubuntu-latest
     steps:
-      - name: Setting Error Log
-        run: echo "::ERROR::Printing Error Message"
       - name: Setting Debug Log
-        run: echo "::DEBUG::Printing Error Message"
-      - name: Setting Warning Log
-        run: echo "::WARNING::Printing Error Message"
+        run: echo "::debug, title=Debug title, file = app.js::Printing Debug Message"
       - name: Setting Info Log
-        run: echo "::INFO::Printing Error Message"
+        run: echo "::info, title=Info title, file = app.js::Printing Info Message"
