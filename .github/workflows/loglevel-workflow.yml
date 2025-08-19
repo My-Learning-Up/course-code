@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setting Debug Log
-        run: echo "::debug, title=Debug title, file = app.js::Printing Debug Message"
+        run: echo "::debug title=Debug title file = app.js::Printing Debug Message"
       - name: Setting Info Log
-        run: echo "::info, title=Info title, file = app.js::Printing Info Message"
+        run: echo "::info title=Info title file = app.js::Printing Info Message"
