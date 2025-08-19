@@ -18,7 +18,7 @@ jobs:
       - name: Printing WorkSpace Info
         run: |
           pwd
-          ls -a
+          dir /s
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
