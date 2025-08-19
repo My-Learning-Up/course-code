@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   multiple-log-level:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Setting Error Log
         run: echo "::ERROR::Printing Error Message"
