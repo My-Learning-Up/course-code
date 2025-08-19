@@ -12,3 +12,13 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
+  Windows-WorkSpace:
+    runs-on: windows-latest
+    steps:
+      - name: Printing WorkSpace Info
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
