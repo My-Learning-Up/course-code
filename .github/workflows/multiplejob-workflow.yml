@@ -12,4 +12,4 @@ jobs:
     needs: run-shell-commands
     steps:
       - name: My Step
-        run: echo "Running on Windows"
+        run: Write-Output "Running on Windows"
