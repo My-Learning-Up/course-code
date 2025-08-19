@@ -17,6 +17,6 @@ jobs:
     steps:
       - name: Printing WorkSpace Info
         run: |
-          echo ${{github.sha}}
-          echo ${{github.repository}}
-          echo ${{github.workspace}}
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
