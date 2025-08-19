@@ -1,0 +1,14 @@
+name: WorkSpace-WorkFow
+on: [push]
+
+jobs:
+  Linux-WorkSpace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing WorkSpace Info
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
